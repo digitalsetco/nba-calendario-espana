@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "functions": {"api/*.js": {"maxDuration": 20}},
+  "rewrites": [{"source": "/", "destination": "/index.html"}],
+  "headers": [
+    {"source": "/api/calendar", "headers": [{"key": "Content-Disposition", "value": "inline; filename=nba-calendar.ics"}]}
+  ]
+}
